@@ -27,7 +27,7 @@ io.on("connection", (socket) => {
 
     if (room == undefined) {
       socket.join(roomName);
-      socket.emit("created", 'Room created. Waiting for other player....' );
+      socket.emit("created", 'Room created. Waiting for other player...' );
     } else if (room.size == 1) {
       
       socket.join(roomName);
